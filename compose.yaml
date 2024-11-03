@@ -1,0 +1,8 @@
+services:
+ database:
+  image: 'postgres:17.0-alpine3.20'
+  environment:
+   POSTGRES_PASSWORD: "local_password"
+   POSTGRES_DB: "local_db"
+  ports:
+   - "5432:5432"
